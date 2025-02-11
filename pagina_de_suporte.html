@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte de Mensagens</title>
+  <link rel="stylesheet" href="stylechat.css">
+  <link rel="stylesheet" href='javachat.js'>
+</head>
+<body>
+
+  <div id="chatContainer" class="chat-container">
+    <div id="chatWindow" class="chat-window"></div>
+    <div class="chat-input-container">
+      <input type="text" id="userInput" class="chat-input" placeholder="Digite sua resposta..." onkeypress="if(event.key === 'Enter') sendMessage()">
+      <button id="sendButton" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <div class="whatsapp-container" onclick="window.open('https://wa.me/5531999999999', '_blank')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    <span class="whatsapp-text">Fale conosco no WhatsApp</span>
+  </div>
+
+  <script src="javachat.js"></script>
+</body>
+</html>
